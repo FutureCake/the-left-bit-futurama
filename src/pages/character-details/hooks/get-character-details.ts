@@ -30,7 +30,7 @@ export default function useCharacterDetails(characterId: number) {
         })
 
 
-    }, [detailsQuery.data])
+    }, [detailsQuery.data, likes])
 
     return {
         data,

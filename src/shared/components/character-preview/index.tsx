@@ -12,11 +12,12 @@ export type CharacterPreviewProps = {
     image: string;
     name: string;
     onSelect?: (id: number) => void;
+    onLike?: (id: number) => void;
 }
 
 export default function CharacterPreview(props: CharacterPreviewProps) {
 
-    const { id, name, age, species, image, liked, gender, occupation, onSelect } = props;
+    const { id, name, age, species, image, liked, gender, occupation, onSelect, onLike } = props;
 
     return (
         <div onClick={() => onSelect?.(id)} className="preview-container">
@@ -24,7 +25,7 @@ export default function CharacterPreview(props: CharacterPreviewProps) {
             <div className="preview-details">
                 <div className="main-delails">
                     <p className="detail-name">{name}</p>
-                    <img className="detail-liked" src={liked ? fullHeart : emptyHeart} />
+                    <img className="detail-liked" src={liked ? fullHeart : emptyHeart} onClick={() => onLike?.(id)} />
                 </div>
                 <p className="single-detail">{age} - {gender} - {species}</p>
                 <p className="single-detail">{occupation}</p>
