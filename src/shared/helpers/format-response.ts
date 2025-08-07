@@ -1,5 +1,5 @@
-import type { FuturamaCharacter } from "../../types/api";
 import type { CharacterPreviewProps } from "../components/character-preview";
+import type { FuturamaCharacter } from "../types/api";
 
 export default function formatPreviewData(raw: FuturamaCharacter): Omit<CharacterPreviewProps, "liked"> {
 

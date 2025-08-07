@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
 import type { CharacterPreviewProps } from "../../../shared/components/character-preview";
 import formatPreviewData from "../../../shared/helpers/format-response";
-import { useLikesStore } from "../../../stores/likes";
+import { useLikesStore } from "../../../shared/stores/likes";
 import getCharacterDetails from "../api/get-character-details";
 
 export type CharacterDetailsData = CharacterPreviewProps & { sayings: string[] };

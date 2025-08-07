@@ -1,5 +1,5 @@
-import api from "../../../api/axios";
-import type { APIResponse, FuturamaCharacter } from "../../../types/api";
+import api from "../../../shared/api/axios";
+import type { APIResponse, FuturamaCharacter } from "../../../shared/types/api";
 
 
 
