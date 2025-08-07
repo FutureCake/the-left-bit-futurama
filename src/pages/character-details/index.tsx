@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import CharacterPreview from "../../shared/components/character-preview";
 import Sayings from "./components/sayings";
 import useCharacterDetails from "./hooks/get-character-details";
+import './styles.scss';
 
 export type CharacterDetailsProps = {
     id?: number;
@@ -14,11 +15,11 @@ export default function CharacterDetails(props: CharacterDetailsProps) {
 
     return (
         <div id="details-container">
-            <h1>Character details</h1>
+            <h1 id="details-title">Character details</h1>
             {(status === "pending") && <p>Loading character details</p>}
             {(status === "error") && <p>Sorry i think he or she is lost in space... try again?</p>}
             {(status === "success" && data !== undefined) &&
-                <div>
+                <div id="details-content">
                     <CharacterPreview {...data} />
                     <Sayings sayings={data.sayings} />
                 </div>
