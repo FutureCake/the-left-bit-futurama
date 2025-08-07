@@ -12,6 +12,7 @@
     .preview-details {
         display: flex;
         flex-direction: column;
+        flex-grow: 1;
 
         .main-delails {
             font-size: 18px;

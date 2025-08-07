@@ -1,0 +1,15 @@
+#sayings-container {
+
+    #sayings-title {
+        padding-bottom: 10px;
+    }
+
+    #sayings-list {
+        border: 1px solid #000;
+        padding: 10px;
+
+        .saying {
+            margin-bottom: 5px;
+        }
+    }
+}
