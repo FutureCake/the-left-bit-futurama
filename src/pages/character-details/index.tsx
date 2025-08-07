@@ -22,7 +22,6 @@ export default function CharacterDetails(props: CharacterDetailsProps) {
 
     const onLike = (id: number) => {
 
-        console.log("CLICK");
         if (!data) return;
 
         if (data.liked) removeLike(id)

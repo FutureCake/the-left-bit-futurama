@@ -9,7 +9,7 @@ export default function ResponsiveCharacters() {
 
     const isDesktop = useMediaQuery({ minWidth: 600 });
     const navigate = useNavigate();
-    const [selectedId, setSelectedId] = useState<number | null>(null);
+    const [selectedId, setSelectedId] = useState<number | null>(1);
 
     const onSelectCharacter = (id: number) => {
 
