@@ -1,0 +1,39 @@
+.preview-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+
+    .preview-image {
+        width: 100px;
+        margin-right: 50px;
+    }
+
+    .preview-details {
+        display: flex;
+        flex-direction: column;
+
+        .main-delails {
+            font-size: 18px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .detail-name {
+                font-size: 25px;
+            }
+
+            .detail-liked {
+                height: 25px;
+            }
+        }
+
+        .single-detail {
+            font-size: 18px;
+        }
+
+    }
+
+
+}

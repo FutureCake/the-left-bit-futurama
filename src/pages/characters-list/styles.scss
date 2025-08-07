@@ -1,0 +1,13 @@
+#characters-container {
+    background: #fff;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+
+    #characters {
+        border: 1px solid #000;
+        align-self: flex-start;
+        overflow: scroll;
+        max-height: 100vh;
+    }
+}
