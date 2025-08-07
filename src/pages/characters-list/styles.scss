@@ -3,11 +3,17 @@
     display: flex;
     align-self: flex-start;
     flex-direction: column;
+    padding: 10px;
+    height: 100%;
+
+    #characters-title {
+        padding-bottom: 10px;
+    }
 
     #characters {
         border: 1px solid #000;
         align-self: flex-start;
         overflow: scroll;
-        max-height: 100vh;
+        flex-grow: 1;
     }
 }

@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { useNavigate } from "react-router-dom";
-import CharacterDetails from "../pages/character-details";
-import CharactersList from "../pages/characters-list";
+import CharacterDetails from "../../pages/character-details";
+import CharactersList from "../../pages/characters-list";
+import './styles.scss';
 
 export default function ResponsiveCharacters() {
 
@@ -24,7 +25,7 @@ export default function ResponsiveCharacters() {
     }, [isDesktop]);
 
     return (
-        <div>
+        <div id="main-container">
             <CharactersList onSelect={onSelectCharacter} />
             {(isDesktop && selectedId !== null) && <CharacterDetails id={selectedId} />}
         </div>

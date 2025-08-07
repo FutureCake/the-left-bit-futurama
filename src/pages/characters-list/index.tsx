@@ -14,7 +14,7 @@ export default function CharactersList(props: CharactersListProps) {
 
     return (
         <div id="characters-container">
-            <h1>Characters</h1>
+            <h1 id="characters-title">Characters</h1>
             {(status === "pending") && <p>Loading futurama's characters</p>}
             {(status === "error") && <p>Sorry i think they are lost in space... try again?</p>}
             {(status === "success" && data !== undefined) &&
